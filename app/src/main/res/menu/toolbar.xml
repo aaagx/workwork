@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<item
+    android:id="@+id/Time_button"
+    android:title="按年月日"
+    android:orderInCategory="100"
+    android:icon="@drawable/ic_time"
+    app:showAsAction="never"
+    />
+    <item
+        android:id="@+id/Type_button"
+        android:title="按类型"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:icon="@drawable/project"
+        />
+    <item
+        android:id="@+id/Setting_button"
+        android:title="设置"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_setting"
+        />
+    <item
+        android:id="@+id/draw_button"
+        android:title="饼图显示"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_pie"
+        />
+</menu>

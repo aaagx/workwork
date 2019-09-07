@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="名称"
+            android:inputType="text"
+            android:lines="1"
+            />
+        <Spinner
+            android:id="@+id/EditTypes"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:entries="@array/Types"
+            android:spinnerMode="dropdown"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/EditValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="金额"
+            android:inputType="number|numberDecimal"
+            android:lines="1"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/EditYear"
+            android:layout_marginTop="10dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:entries="@array/Month"
+            android:spinnerMode="dropdown"
+            />
+        <Spinner
+            android:id="@+id/EditMonth"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:entries="@array/Month"
+            android:spinnerMode="dropdown"
+
+            />
+        <Spinner
+            android:id="@+id/EditDay"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/Delete_button"
+        android:text="删除"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
